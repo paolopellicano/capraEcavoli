@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+
+<html lang="it" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="BitCamp - Group 2">
+    <meta name="robots" content="index, follow">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+
+    <title>Recensioni</title>
+    <style>
+        footer {
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        nav {
+            border-radius: 10px;
+        }
+
+        .storia {
+            border-radius: 70px 0 70px 0;
+            border: solid 8px rgb(245, 135, 13)
+        }
+
+        #laura {
+            padding-top: 50px;
+        }
+
+        h1 {
+            padding-left: 20px;
+        }
+
+        #storia img {
+            border-radius: 70px 0 70px 0;
+            border: solid 8px rgb(245, 135, 13)
+        }
+
+        #storia p {
+            background-color: rgba(76,157,24,0.7);
+            border-radius: 15px;
+        }
+        #div {
+            background-color: rgba(76,157,24,0.7);
+            border-radius: 15px;
+        }
+        main {
+            background-color: rgb(234,218,206);
+        }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        #recensioni {
+            padding: 20px;
+        }
+
+        .recensione {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .voto {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .camera {
+            border-radius: 70px 0 70px 0;
+            border: solid 8px rgb(148, 105, 74);
+        }
+
+        footer {
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        nav {
+            border-radius: 10px;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .button {
+            background-color: rgb(76,157,24);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius:10px;
+        }
+
+        label {
+            text-align: center;
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <!--Navbar BS-->
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="src/img/nav/logo.png" alt="logo" width="50">
+                Capra e Cavoli
+            </a>
+        </div>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            La struttura
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="camere.html#singola">Camera Singola Standard</a></li>
+                            <li><a class="dropdown-item" href="camere.html#matrimonia">Camera Matrimoniale Deluxe</a></li>
+                            <li><a class="dropdown-item" href="camere.html#familiare">Suite Familiare</a></li>
+                            <li><a class="dropdown-item" href="camere.html#montagna">Camera Vista Montagna</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="servizi_offerti.html">Servizi offerti</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="galleria_fotografica.html">Galleria fotografica</a></li>
+
+
+                        </ul>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Chi siamo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="storia.html">La nostra storia</a></li>
+                            <li><a class="dropdown-item" href="team.html">I nostri programmatori</a></li>
+                            <li><a class="dropdown-item" href="#footer">Contatti</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prenotazioni.html">Prenotazioni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recensioni.html">Recensioni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="località.html">Località e attrazioni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventi.html">Eventi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+
+
+
+
+
+
+        <header>
+            <h1>Recensioni</h1>
+        </header>
+
+        <section id="recensioni">
+
+
+            <!--<div class="recensione">-->
+            <h3>Luca Rossi</h3>
+            <a><b>27/02/2024</b></a><br />
+            <a>Un paradiso tra le montagne.</a>
+            <p>
+                Soggiorno perfetto in questo hotel. Personale cordiale, camere pulite e confortevoli, cibo ottimo. Vista mozzafiato sulle montagne. Ideale per escursioni e relax.
+            </p>
+            <img src="src/img/recensioni/stelle.jpg" with="40" height="30" />
+            <br />
+            <br /><br />
+            <br />
+
+            <h3>Alessio Giottoli</h3>
+            <a><b>03/07/2023</b></a><br />
+            <a>Esperienza immersa nella natura!</a>
+            <p>
+                Posizione fantastica, circondato da boschi e sentieri. Atmosfera familiare, camere curate e silenziose. Colazione abbondante con prodotti freschi. Ottimo rapporto qualità-prezzo.
+            </p>
+            <img src="src/img/recensioni/stelle.jpg" with="40" height="30" />
+
+
+
+            <br />
+            <br /><br />
+            <br />
+
+            <h3>Fabio Verdi</h3>
+            <a><b>27/12/2024</b></a><br />
+            <a>Vacanza indimenticabile in famiglia!</a>
+            <p>
+                Hotel perfetto per famiglie con bambini. Parco giochi, animazione e menù dedicato ai più piccoli. Personale attento alle esigenze di tutti. Posizione comoda vicino a un maneggio e un parco giochi.
+            </p>
+            <img src="src/img/recensioni/stelle.jpg" with="40" height="30" />
+        </section>
+    </main>
+
+
+
+    <div class="container mt-5">
+        <h1>Lascia la tua recensione</h1>
+
+        <form class="row mt-3">
+            <div class="col-md-12">
+                <label for="nome" class="form-label">Nome e cognome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+
+            <div class="col-md-12">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="col-md-12 mt-3">
+                <label for="recensione" class="form-label">Recensione:</label>
+                <textarea class="form-control" id="recensione" name="recensione" rows="4" required></textarea>
+            </div>
+
+            <div class="col-md-12 mt-3">
+                <label for="voto" class="form-label">Valutazione:</label>
+                <select class="form-select" id="voto" name="voto" required>
+                    <option value="1">★★★★★</option>
+                    <option value="2">★★★★</option>
+                    <option value="3">★★★</option>
+                    <option value="4">★★</option>
+                    <option value="5">★</option>
+                </select>
+            </div>
+
+            <div class="col-12 mt-4">
+                <button type="submit" class="button">Invia Recensione</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="bg-success" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>&copy; Capra e Cavoli - since 1999. Tutti diritti riservati </p>
+                    <p>I nostri social:</p>
+                    <a href="https://www.facebook.com"><img src="src/img/nav/facebook.png" alt="facebook" width="30px" /></a>
+                    <a href="https://www.instagram.com"><img src="src/img/nav/instagram.png" alt="instagram" width="30px" /></a>
+                    <a href="https://www.tiktok.com"><img src="src/img/nav/tiktok.png" alt="tiktok" width="30px" /></a>
+                </div>
+                <div class="col-md-4">
+                    <address>
+                        Indirizzo: Via Giovanni Paolo II, 86082 Capracotta (IS)<br />
+                        Tel: +39 0865 943120 <br>
+                        Fax: +39 08651940405<br>
+                        Cel: +39 335 482526<br />
+                        E-mail:capra@ecavoli.com
+                    </address>
+                </div>
+                <!--Modale con la sezione per lasciare i propri dati ed essere ricontattati-->
+                <div class="col-md-4">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Clicca qui per essere ricontattato
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade bg-success" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Siamo qui per te</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="Nome">
+                                        <label for="floatingInput">Indirizzo mail</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingPassword" placeholder="Cognome">
+                                        <label for="floatingPassword">Cognome</label><br />
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="Mail">
+                                        <label for="floatingInput">E-Mail</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="tel" class="form-control" id="floatingInput" placeholder="Telefono">
+                                        <label for="floatingInput">Telefono</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="datetime-local" class="form-control" id="floatingInput" placeholder="Quando vuoi essere richiamato">
+                                        <label for="floatingInput">Quando vuoi essere richiamato</label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Invia</button>
+                                    <button type="reset" class="btn btn-warning">Cancella</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</body>
+</html>
