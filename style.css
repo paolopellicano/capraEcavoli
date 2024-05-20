@@ -1,0 +1,155 @@
+﻿/*Foto arrotondate delle camere*/
+.camera {
+    border-radius: 70px 0 70px 0;
+    border: solid 8px rgb(148, 105, 74);
+}
+footer{
+    padding:10px;
+    border-radius:10px;
+}
+nav {
+    border-radius: 10px 10px 0 0;
+}
+.storia {
+    border-radius: 70px 0 70px 0;
+    border: solid 8px rgb(245, 135, 13)
+}
+#laura{
+    padding-top:50px;
+}
+h1 {
+    padding-left: 20px;
+    color: black;
+}
+#storia img {
+    border-radius: 70px 0 70px 0;
+    border: solid 8px rgb(245, 135, 13)
+}
+#storia p {
+    background-color: rgba(76,157,24,0.7);
+    border-radius:15px;
+}
+main {
+    background-color: rgb(234,218,206);
+}
+body {
+    color: black;
+    margin: 0px;
+    text-align: center;
+    font-family: 'montserrat';
+    background-color: beige;
+}
+/*immagine con testo homepage */
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white; /* Colore del testo */
+}
+.image-container img {
+    width: 100%;
+}
+.centered-text {
+    font-weight: 900;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Sfondo semi-trasparente per migliorare la leggibilità */
+    padding: 10px;
+    border-radius: 5px;
+}
+/* galleria immagini */
+.gallery-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 30%;
+    margin: 5px;
+    transition: transform 0.2s ease;
+    border-radius: 70px 0 70px 0;
+    border: solid 8px rgb(148, 105, 74);
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Flexbox 3 contenitori home */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Distribuisce lo spazio in modo uniforme tra le colonne */
+    flex-wrap: wrap; /* Permette alle colonne di andare a capo se lo spazio non è sufficiente */
+    margin: 0; /* Per compensare il padding delle colonne */
+    background-color: beige;
+}
+
+.flex-column {
+    margin-top: 12px;
+    flex: 1; /* Fa sì che ogni colonna occupi uno spazio uguale */
+    padding: 15px; /* Spazio interno per ogni colonna */
+    box-sizing: border-box; /* Include il padding nel calcolo della larghezza */
+    min-width: 200px; /* Larghezza minima per mantenere la leggibilità su schermi piccoli */
+    flex: 100%; /* Colonne a tutta larghezza su schermi piccoli */
+}
+
+/* google map */
+#map {
+    height: 400px;
+    width: 100%;
+}
+#div {
+    background-color: rgba(76,157,24,0.7);
+    border-radius: 15px;
+}
+
+#recensioni {
+    padding: 20px;
+    text-align:center;
+}
+#form-label{
+    text-align:center;
+}
+
+.recensione {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.voto {
+    font-weight: bold;
+}
+.button {
+    background-color: rgb(76,157,24);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+label {
+    text-align: center;
+}
+.pastinaca {
+    border-radius: 70px 0 70px 0;
+    border: solid 8px rgb(76,157,24);
+}
